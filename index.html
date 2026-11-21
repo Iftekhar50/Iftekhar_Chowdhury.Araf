@@ -1,0 +1,135 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Iftekhar Chowdhury Araf</title>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@400;700;800&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+.bn *{font-family:'Anek Bangla',sans-serif;font-weight:700}
+body{min-height:100vh;background:linear-gradient(135deg,#00c9a7,#00b4d8,#48cae4);display:flex;justify-content:center;align-items:center;padding:64px 14px 30px}
+.card{width:100%;max-width:520px;background:rgba(255,255,255,.18);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.4);border-radius:28px;padding:30px 20px;box-shadow:0 20px 50px rgba(0,0,0,.18);text-align:center}
+.pic{width:160px;height:160px;margin:auto;border-radius:50%;border:6px solid #b7ff5a;box-shadow:0 0 0 4px #fff,0 8px 25px rgba(0,0,0,.25);overflow:hidden;background:#fff}
+.pic img{width:100%;height:100%;object-fit:cover}
+.name{margin-top:18px;color:#fff;font-weight:800;font-size:clamp(14px,4.8vw,28px);white-space:nowrap;display:flex;justify-content:center;align-items:center;gap:8px}
+.name svg{width:1.15em;height:1.15em;color:#0a3aa8;flex:none}
+.tabs{display:flex;gap:8px;margin:22px 0}
+.tabs button{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;padding:10px 4px;border:0;border-radius:14px;background:rgba(255,255,255,.35);color:#fff;font-weight:600;font-size:12px;cursor:pointer;transition:.3s}
+.tabs .on{background:#fff;color:#00a896;box-shadow:0 6px 16px rgba(0,0,0,.15)}
+.ic{width:40px;height:40px;padding:8px;border-radius:12px;color:#fff;background:linear-gradient(135deg,var(--a),var(--b));box-shadow:0 4px 10px rgba(0,0,0,.2);flex:none}
+.tabs .ic{width:32px;height:32px;padding:6px}
+#lg{position:fixed;top:12px;right:12px;z-index:9;display:flex;align-items:center;gap:6px;padding:8px 14px;border:0;border-radius:30px;background:#fff;color:#00a896;font-weight:700;font-size:13px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.2)}
+#lg svg{width:18px;height:18px}
+.sec{display:none;animation:f .5s}.sec.on{display:block}
+@keyframes f{from{opacity:0;transform:translateY(12px)}}
+h2{color:#fff;font-size:26px;font-weight:800;margin-bottom:14px;text-align:center}
+.list{display:grid;gap:11px}
+.row{display:flex;align-items:center;gap:12px;background:#fff;border-radius:16px;padding:11px 14px;font-size:14px;font-weight:500;color:#223;text-decoration:none;text-align:left;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+a.row{transition:.3s}a.row:hover{transform:translateY(-3px)}
+.about{background:#fff;border-radius:18px;padding:18px;font-size:14px;line-height:1.7;color:#334;text-align:left}
+.about p{margin-bottom:10px}.about p:last-child{margin:0}
+@media(min-width:600px){
+.card{max-width:660px;padding:36px 30px}
+.pic{width:180px;height:180px}
+.name{font-size:30px}
+.tabs button{font-size:15px;padding:12px 4px}
+.list{grid-template-columns:1fr 1fr}
+.row{font-size:15px}.about{font-size:16px;padding:24px}
+}
+@media(min-width:960px){
+body{padding:70px 40px 40px}
+.card{max-width:1180px;display:grid;grid-template-columns:420px 1fr;gap:46px;padding:54px;text-align:left;align-items:start}
+.side{text-align:center}
+.pic{width:230px;height:230px}
+.name{font-size:25px}
+.tabs{flex-direction:column;margin:28px 0 0}
+.tabs button{flex-direction:row;justify-content:flex-start;gap:14px;font-size:16px;padding:12px 16px}
+.tabs .ic{width:36px;height:36px}
+h2{font-size:36px;text-align:left;margin-bottom:20px}
+.list{gap:16px}
+.row{font-size:16px;padding:14px 20px}.ic{width:46px;height:46px;padding:10px}
+.about{font-size:17px;padding:32px}
+}
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute" fill="currentColor">
+<symbol id="v" viewBox="0 0 24 24"><path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"/></symbol>
+<symbol id="gl" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/></symbol>
+<symbol id="us" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></symbol>
+<symbol id="in" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></symbol>
+<symbol id="sh" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/></symbol>
+<symbol id="ed" viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></symbol>
+<symbol id="ph" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></symbol>
+<symbol id="ml" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></symbol>
+<symbol id="hr" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></symbol>
+<symbol id="lc" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></symbol>
+<symbol id="hm" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></symbol>
+<symbol id="fl" viewBox="0 0 24 24"><path d="M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6z"/></symbol>
+<symbol id="yt" viewBox="0 0 24 24"><path d="M21.58 7.19c-.23-.86-.9-1.52-1.76-1.75C18.25 5 12 5 12 5s-6.25 0-7.82.44c-.86.23-1.53.89-1.76 1.75C2 8.76 2 12 2 12s0 3.24.42 4.81c.23.86.9 1.52 1.76 1.75C5.75 19 12 19 12 19s6.25 0 7.82-.44c.86-.23 1.53-.89 1.76-1.75C22 15.24 22 12 22 12s0-3.24-.42-4.81zM10 15V9l5.2 3-5.2 3z"/></symbol>
+<symbol id="fb" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></symbol>
+</svg>
+
+<button id="lg" onclick="tg()"><svg><use href="#gl"/></svg><span id="lb">বাংলা</span></button>
+
+<div class="card">
+<div class="side">
+<div class="pic"><img src="data:image/jpeg;base64,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" alt="Araf" onerror="this.src='https://ui-avatars.com/api/?name=Araf&size=300&background=00c9a7&color=fff'"></div>
+<div class="name"><span data-b="ইফতেখার চৌধুরী আরাফ">Iftekhar Chowdhury Araf</span><svg><use href="#v"/></svg></div>
+<div class="tabs">
+<button class="on" onclick="go(0,this)"><svg class="ic" style="--a:#00c6ff;--b:#0072ff"><use href="#us"/></svg><span data-b="ব্যক্তিগত তথ্য">Personal Details</span></button>
+<button onclick="go(1,this)"><svg class="ic" style="--a:#ff9966;--b:#ff5e62"><use href="#in"/></svg><span data-b="আমার সম্পর্কে">About Me</span></button>
+<button onclick="go(2,this)"><svg class="ic" style="--a:#7f00ff;--b:#e100ff"><use href="#sh"/></svg><span data-b="সোশ্যাল">Social</span></button>
+</div>
+</div>
+
+<div class="main">
+<div class="sec on"><h2 data-b="ব্যক্তিগত তথ্য">Personal Details</h2>
+<div class="list">
+<div class="row"><svg class="ic" style="--a:#ffb347;--b:#ff5e00"><use href="#ed"/></svg><span data-b="<b>শিক্ষা:</b> চৌদ্দগ্রাম সরকারি কলেজ"><b>Education:</b> Chouddagram Government College</span></div>
+<div class="row"><svg class="ic" style="--a:#43e97b;--b:#0a8f3c"><use href="#ph"/></svg><span data-b="০১৮১৫২৮০৪১৭">01815280417</span></div>
+<div class="row"><svg class="ic" style="--a:#ff7a7a;--b:#d93025"><use href="#ml"/></svg><span>arafc179@gmail.com</span></div>
+<div class="row"><svg class="ic" style="--a:#ff6b9d;--b:#e0115f"><use href="#hr"/></svg><span data-b="<b>সম্পর্কের অবস্থা:</b> সিঙ্গেল"><b>Relationship:</b> Single</span></div>
+<div class="row"><svg class="ic" style="--a:#ff512f;--b:#dd2476"><use href="#lc"/></svg><span data-b="<b>বর্তমান ঠিকানা:</b> নেতড়া, চিওড়া, চৌদ্দগ্রাম, কুমিল্লা"><b>Present:</b> Netora, Chiora, Chouddagram, Cumilla</span></div>
+<div class="row"><svg class="ic" style="--a:#8e2de2;--b:#4a00e0"><use href="#hm"/></svg><span data-b="<b>স্থায়ী ঠিকানা:</b> নেতড়া, চিওড়া, চৌদ্দগ্রাম, কুমিল্লা"><b>Permanent:</b> Netora, Chiora, Chouddagram, Cumilla</span></div>
+<div class="row"><svg class="ic" style="--a:#00c27a;--b:#006a4e"><use href="#fl"/></svg><span data-b="<b>নাগরিকত্ব:</b> বাংলাদেশি"><b>Citizenship:</b> Bangladeshi</span></div>
+</div></div>
+
+<div class="sec"><h2 data-b="আমার সম্পর্কে">About Me</h2>
+<div class="about">
+<p data-b="আমার নাম ইফতেখার চৌধুরী আরাফ। আমি বাংলাদেশের একজন শিক্ষার্থী এবং বর্তমানে চৌদ্দগ্রাম সরকারি কলেজের মানবিক বিভাগে অধ্যয়নরত।">My name is Iftekhar Chowdhury Araf. I am a student from Bangladesh, currently studying in the Humanities Department at Chouddagram Government College.</p>
+<p data-b="নতুন কিছু শেখা, প্রযুক্তি নিয়ে অনুসন্ধান করা এবং নিজের দক্ষতা বাড়ানোর প্রতি আমার গভীর আগ্রহ আছে। আমি বিশ্বাস করি নিষ্ঠা, সততা, আত্মবিশ্বাস ও কঠোর পরিশ্রমই সফলতার চাবিকাঠি।">I am passionate about learning new things, exploring technology, and developing my skills. I believe that dedication, honesty, confidence, and hard work are the keys to success.</p>
+<p data-b="আমি সবসময় নিজেকে উন্নত করতে, নতুন অভিজ্ঞতা অর্জন করতে এবং দৃঢ় সংকল্পের সাথে লক্ষ্যের দিকে এগিয়ে যেতে চেষ্টা করি।">I always strive to improve myself, gain new experiences, and move forward toward my goals with determination.</p>
+</div></div>
+
+<div class="sec"><h2 data-b="সোশ্যাল">Social</h2>
+<div class="list">
+<a class="row" href="https://www.youtube.com/@arafchowdhury100" target="_blank"><svg class="ic" style="--a:#ff5252;--b:#c4000b"><use href="#yt"/></svg><span data-b="ইউটিউব চ্যানেল">YouTube Channel</span></a>
+<a class="row" href="https://www.facebook.com/profile.php?id=61596302692259" target="_blank"><svg class="ic" style="--a:#3ea0ff;--b:#0a49c9"><use href="#fb"/></svg><span data-b="ফেসবুক প্রোফাইল">Facebook Profile</span></a>
+<a class="row" href="https://wa.me/8801815280417" target="_blank"><svg class="ic" style="--a:#43e97b;--b:#0a8f3c"><use href="#ph"/></svg><span data-b="হোয়াটসঅ্যাপ">WhatsApp</span></a>
+<a class="row" href="mailto:arafc179@gmail.com"><svg class="ic" style="--a:#ff7a7a;--b:#d93025"><use href="#ml"/></svg><span data-b="ইমেইল">Email</span></a>
+</div></div>
+</div>
+</div>
+
+<script>
+var L=0;
+function go(i,b){document.querySelectorAll('.sec').forEach((s,n)=>s.classList.toggle('on',n==i));document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('on'));b.classList.add('on')}
+function set(){
+document.body.classList.toggle('bn',!!L);document.documentElement.lang=L?'bn':'en';
+document.querySelectorAll('[data-b]').forEach(e=>{if(!e.dataset.e)e.dataset.e=e.innerHTML;e.innerHTML=L?e.dataset.b:e.dataset.e});
+document.getElementById('lb').textContent=L?'English':'বাংলা';
+document.title=L?'ইফতেখার চৌধুরী আরাফ':'Iftekhar Chowdhury Araf';
+try{localStorage.l=L}catch(e){}}
+function tg(){L=L?0:1;set()}
+try{L=+localStorage.l||0}catch(e){}
+if(L)set();
+</script></body></html>
